@@ -37,11 +37,40 @@ class Persona {
         console.log("detalles de profesor/a:", this.name, this.age, this.gender, this.subject, this.level)
     }
  }
- const teacher = new Teacher ('Katalin', 30, "female", "Anthropology", 5) 
- teacher.asignar ()
+ const professor = new Teacher ('Katalin', 30, "female", "Anthropology", 5) 
+ professor.asignar ()
  
 
 
 
 
  //Ejercicio extra Maya-Azteca
+ class Warrior {
+    constructor (life, power) {
+        this.life = life
+        this.power = power
+    }
+    attack = () => {
+        console.log ("El ataque es:", this.life, this.power)
+    }
+ }
+//  const mightyWarrior = new Warrior(30, 35)
+//  mightyWarrior.attack ()
+
+class Maya extends Warrior {
+    constructor (life, power, drinkColaCao) {
+        this.drinkColaCao = power + 10 
+    }
+    attack = () => {
+        console.log ("El ataque es:", this.life, this.power)
+    }
+ }
+const mightyMaya = new Warrior(30, 35)
+mightyMaya.attack ()
+
+class Azteca extends Warrior {
+    constructor (life, power, drinkNesquik) {
+        this.drinkNesquik = life + 10
+    }
+    
+}
