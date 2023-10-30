@@ -1,3 +1,4 @@
+//Ejercicios obligatorios
 class Persona {
     constructor (name, age, gender) {
         this.name = name
@@ -5,12 +6,12 @@ class Persona {
         this.gender = gender
         }
         obtDetalles = () => {
-            return "detalles de "
+            console.log ("detalles personales: ", this.name, this.age, this.gender)
         }
 }
  const guy = new Persona ('Peio', 28, "male")
  guy.obtDetalles ()
- //console.log (guy)
+ 
 
  class Student extends Persona {
     constructor (name, age, gender, grade, group) {
@@ -19,12 +20,12 @@ class Persona {
             this.group = group
     }
         registrar = () => {
-        return "detalles de estudiante"
+            console.log("detalles de estudiante:", this.name, this.age, this.gender, this.grade, this.group) 
         }
  }
  const pupil = new Student ('Sandra', 20, "female", 3, "A")
  pupil.registrar ()
- //console.log (pupil)
+ 
 
  class Teacher extends Persona {
     constructor (name, age, gender, subject, level) {
@@ -33,9 +34,14 @@ class Persona {
             this.level = level
     }
     asignar = () => {
-        return "detalles de profesor/a"
+        console.log("detalles de profesor/a:", this.name, this.age, this.gender, this.subject, this.level)
     }
  }
  const teacher = new Teacher ('Katalin', 30, "female", "Anthropology", 5) 
  teacher.asignar ()
- console.log(teacher)
+ 
+
+
+
+
+ //Ejercicio extra Maya-Azteca
