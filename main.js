@@ -72,5 +72,6 @@ class Azteca extends Warrior {
     constructor (life, power, drinkNesquik) {
         this.drinkNesquik = life + 10
     }
-    
+
 }
+//Introducir defense (damage)
