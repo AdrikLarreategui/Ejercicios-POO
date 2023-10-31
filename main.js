@@ -50,8 +50,12 @@ class Persona {
         this.life = life
         this.power = power
     }
-    attack = () => {
-        console.log ("El ataque es:", this.life, this.power)
+    power = () => {
+        return `Power: ${this.power}`;
+    }
+    defend = (damage) => {
+        this.life -= damage
+        return `Vida restante: ${this.life}`;
     }
  }
 //  const mightyWarrior = new Warrior(30, 35)
@@ -59,7 +63,7 @@ class Persona {
 
 class Maya extends Warrior {
     constructor (life, power, drinkColaCao) {
-        this.drinkColaCao = power + 10 
+        this.drinkColaCao = this.power + 10 
     }
     attack = () => {
         console.log ("El ataque es:", this.life, this.power)
