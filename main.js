@@ -63,7 +63,8 @@ class Persona {
 
 class Maya extends Warrior {
     constructor (life, power, drinkColaCao) {
-        this.drinkColaCao = this.power + 10 
+        super(life, power)
+        this.drinkColaCao = drinkColaCao
     }
     attack = () => {
         console.log ("El ataque es:", this.life, this.power)
@@ -74,7 +75,8 @@ mightyMaya.attack ()
 
 class Azteca extends Warrior {
     constructor (life, power, drinkNesquik) {
-        this.drinkNesquik = life + 10
+        super(life, power)
+        this.drinkNesquik = drinkNesquik
     }
 
 }
